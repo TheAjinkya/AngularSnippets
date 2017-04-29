@@ -1,0 +1,64 @@
+<html ng-app="myApp">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+    <body ng-controller="myCtrl">
+    <div class="container">
+        <div class="col-md-6">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+             JSON Data
+        </div>
+            <div class="panel-body">
+
+               <div ng-repeat="x in content">
+        <table class="table table-striped table-hover">
+                <tr>
+                <td>First Name</td>
+                <td>{{x.firstName}}</td>
+                </tr>
+                <tr>
+                <td> Last Name </td>
+                <td> {{x.lastName}}</td>
+                </tr>
+                </table>
+                </div>  
+                                
+            </div>
+            
+            
+        </div>
+            </div>
+         <div class="col-md-6">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+             Data Input
+        </div>
+            <div class="panel-body">
+                <div ng-repeat="x in content">
+        <table class="table table-striped table-hover">
+                <tr>
+                <td>Email</td>
+                <td>{{x.email}}</td>
+                </tr>
+                <tr>
+                <td>Contact</td>
+                <td>{{x.contact}}</td>
+                </tr>
+        </table>
+                </div>
+                
+                      
+            </div>
+        </div>
+       
+            </div>
+        
+    </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+<script src="script.js"></script>
+</html>
