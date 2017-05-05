@@ -1,0 +1,55 @@
+<html ng-app="myApp">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+    <body ng-controller="myCtrl">
+    <div class="container">
+        <div class="col-md-12">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+             Data Input
+        </div>
+            <div class="panel-body">
+
+                <form class="form-horizontal" name="myForm">
+                <div class="form-group">
+                <span class="control-label col-sm-4">First name:<span style="color:red">*</span> </span>
+                <span class="col-sm-6"> 
+                <input type="text" ng-model="firstName" name="firstName" placeholder="Enter the first Name"><div ng-show="myForm.firstName.$touched && myForm.firstName.$valid" style="color:red">This is required</div></span>
+                    
+                </div>
+                <div class="form-group">
+                <span class="control-label col-sm-4">Last name: <span style="color:red">*</span> </span>
+                <span class="col-sm-6"> 
+                <input type="text" ng-model="lastName" name="lastName" placeholder="Enter the last Name"><div ng-show="myForm.lastName.$touched && myForm.firstName.$valid" style="color:red">This is required</div></span>
+                </div>
+                <div class="form-group">
+                <span class="control-label col-sm-4">Email: <span style="color:red">*</span> </span>
+                <span class="col-sm-6"> 
+                <input type="text" ng-model="email" name="email" placeholder="Enter the email"><div ng-show="myForm.email.$touched && myForm.email.$valid" style="color:red">This is required</div></span>
+                </div>
+                <div class="form-group">
+                <span class="control-label col-sm-4">Contact: <span style="color:red">*</span> </span>
+                <span class="col-sm-6"> 
+                <input type="text" ng-model="contact" name="contact" placeholder="Enter the contact"><div ng-show="myForm.contact.$touched && myForm.contact.$valid" style="color:red">This is required</div></span>
+                </div>
+                <div class="form-group text-center">
+                    <button class="btn btn-primary" ng-disabled="myForm.firstName.$touched || myForm.lastName.$touched || myForm.email.$touched ">submit</button>
+                </div>
+                
+                </form>
+                                
+            </div>
+            
+            
+        </div>
+            </div>
+        
+    </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+<script src="script.js"></script>
+</html>
