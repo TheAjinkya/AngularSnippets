@@ -1,0 +1,150 @@
+<html ng-app="myApp">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css">
+</head>
+    <body>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6" ng-controller="addCtrl">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+             Addition
+        </div>
+            <div class="panel-body">
+
+                <form class="form">
+                                    
+                <div class="form-group">
+                <span class="control-label col-sm-4">First Number: </span>
+                <span class="col-sm-6"> 
+                <input type="number" ng-model="firstNum" placeholder="Enter the first Name"></span>
+                </div>
+                    <div class="form-group">
+                <span class="control-label col-sm-4">Second Number: </span>
+                <span class="col-sm-6"> 
+                <input type="number" ng-model="lastNum" placeholder="Enter the first Name"></span>
+                </div>
+                </form>
+                
+                <div class="">
+                        <button class="btn btn-primary" type="button" ng-click="addition()">Addition</button>
+                        {{result}}
+<!--                    {{naam}}-->
+                </div>
+             
+                                
+            </div>
+            
+            
+        </div>
+            </div>
+         <div class="col-md-6" ng-controller="subCtrl">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+             Subtraction
+        </div>
+            <div class="panel-body">
+
+                <form class="form">
+                                    
+                <div class="form-group">
+                <span class="control-label col-sm-4">First Number: </span>
+                <span class="col-sm-6"> 
+                <input type="number" ng-model="firstNum" placeholder="Enter the first Name"></span>
+                </div>
+                    <div class="form-group">
+                <span class="control-label col-sm-4">Second Number: </span>
+                <span class="col-sm-6"> 
+                <input type="number" ng-model="lastNum" placeholder="Enter the first Name"></span>
+                </div>
+                </form>
+                
+                <div class="">
+                        <button class="btn btn-primary" type="button" ng-click="subtract()">Subtract</button>
+                        {{result}}
+                </div>
+                                
+            </div>
+            
+            
+        </div>
+       
+            </div>
+            </div>
+         <div class="row">
+        <div class="col-md-6" ng-controller="multiCtrl">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+             Multiplication
+        </div>
+            <div class="panel-body">
+
+                <form class="form">
+                                    
+                <div class="form-group">
+                <span class="control-label col-sm-4">First Number: </span>
+                <span class="col-sm-6"> 
+                <input type="number" ng-model="firstNum" placeholder="Enter the first Name"></span>
+                </div>
+                    <div class="form-group">
+                <span class="control-label col-sm-4">Second Number: </span>
+                <span class="col-sm-6"> 
+                <input type="number" ng-model="lastNum" placeholder="Enter the first Name"></span>
+                </div>
+                </form>
+                
+                <div class="">
+                        <button class="btn btn-primary" type="button" ng-click="multi()">multi</button>
+                        {{result}}
+                </div>
+                                
+            </div>
+            
+            
+        </div>
+            </div>
+         <div class="col-md-6" ng-controller="divCtrl">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+             Division
+        </div>
+            <div class="panel-body">
+
+                <form class="form">
+                                    
+                <div class="form-group">
+                <span class="control-label col-sm-4">First Number: </span>
+                <span class="col-sm-6"> 
+                <input type="number" ng-model="firstNum" placeholder="Enter the first Name"></span>
+                </div>
+                    <div class="form-group">
+                <span class="control-label col-sm-4">Second Number: </span>
+                <span class="col-sm-6"> 
+                <input type="number" ng-model="lastNum" placeholder="Enter the first Name"></span>
+                </div>
+                </form>
+                
+                <div class="">
+                        <button class="btn btn-primary" type="button" ng-click="div()">Division</button>
+                        {{result}}
+                </div>
+                                
+            </div>
+            
+            
+        </div>
+       
+            </div>
+            </div>
+        
+    </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="module.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+<script src="providers.js"></script>
+    <script src="controller.js"></script>
+    
+</html>
