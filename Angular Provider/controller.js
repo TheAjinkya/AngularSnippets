@@ -1,5 +1,5 @@
 
-app.controller("addCtrl", function($scope, myFactory, myCalculator){
+app.controller("addCtrl", function($scope, myCalculator){
     $scope.firstNum = ""
     $scope.lastNum = ""
     
@@ -11,37 +11,37 @@ app.controller("addCtrl", function($scope, myFactory, myCalculator){
     $scope.naam = myCalculator.yourName();
 })
 
-app.controller("subCtrl", function($scope, myFactory){
+app.controller("subCtrl", function($scope, myCalculator){
 
     $scope.firstNum = ""
     $scope.lastNum = ""
     
     $scope.subtract = function(){
         
-        $scope.result = myFactory.sub($scope.firstNum, $scope.lastNum);
+        $scope.result = myCalculator.sub($scope.firstNum, $scope.lastNum);
     }  
 })
 
 
-app.controller("multiCtrl", function($scope, myFactory){
+app.controller("multiCtrl", function($scope, myCalculator){
 
     $scope.firstNum = ""
     $scope.lastNum = ""
     
     $scope.multi = function(){
         
-        $scope.result = myFactory.multi($scope.firstNum, $scope.lastNum);
+        $scope.result = myCalculator.multi($scope.firstNum, $scope.lastNum);
     }  
 })
 
 
-app.controller("divCtrl", function($scope, myFactory){
+app.controller("divCtrl", function($scope, myCalculator){
 
     $scope.firstNum = ""
     $scope.lastNum = ""
     
     $scope.div = function(){
         
-        $scope.result = myFactory.div($scope.firstNum, $scope.lastNum);
+        $scope.result = myCalculator.div($scope.firstNum, $scope.lastNum);
     }  
 })
