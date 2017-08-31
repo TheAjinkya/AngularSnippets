@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> 
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>-->
+        
+<!--        <script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>-->
+        
+        <script src="angular-ui-router.js"></script>
+
+        <script src="module.js"></script>
+        <script src="config.js"></script>
+        <script src="controller.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <p class="navbar-brand">Menu Bar</p>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="about">About Us</a></li>
+                <li><a ui-sref="contact">Contact</a></li>
+                <li><a ui-sref="product">Products</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+
+             <div ui-view></div>
+
+
+
+        </div>
+    </body>
+</html>
