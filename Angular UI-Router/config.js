@@ -8,6 +8,17 @@ app.config(function($stateProvider, $urlRouterProvider){
         templateUrl : 'home.html'
 
     })
+    
+    .state('home.addition', {
+        'url' : '/addition',
+        templateUrl : 'addition.html'
+    })
+    
+    .state('home.subtraction', {
+        url : '/subtraction',
+        templateUrl : 'subtraction.html'
+        
+    })
 
         .state('about', {
         'url': '/about',
