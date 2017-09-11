@@ -2,28 +2,28 @@ var app = angular.module("myApp", [])
 
 
 app.filter('capitalize', function() {
-  return function(x) {
-    if (x!=null)
-    return x.substring(0,1).toUpperCase()+x.substring(1);
-  }
+    return function(x) {
+        if (x!=null)
+            return x.substring(0,1).toUpperCase()+x.substring(1);
+    }
 });
 
 
 app.filter('lowerCase', function() {
-  return function(input) {
-    if (input!=null)
-    return input.substring(0,1).toLocaleLowerCase() +input.substring(1).toUpperCase();
-  }
+    return function(input) {
+        if (input!=null)
+            return input.substring(0,1).toLocaleLowerCase() +input.substring(1).toUpperCase();
+    }
 });
 
 
 
 app.controller("myCtrl", function($scope){
-    
+
     $scope.names = ['Ajinkya', 'Apurva', 'priyanka', 'sandip', 'gopal', 'neha']
-    
-    $scope.person = ['Ned', 'Rob', 'Jon', 'Arya', 'Sansa', 'Bran', 'Rickon']
-  
-    
+
+    $scope.person = [{firstName: 'Ned', lastName: 'Stark'},{firstName: 'Robb', lastName: 'Stark'},{firstName: 'Jon', lastName: 'Stark'},{firstName: 'Bran', lastName: 'Stark'},{firstName: 'Arya', lastName: 'Stark'},{firstName: 'Sansa', lastName: 'Stark'}]
+
+
 })
 

@@ -32,8 +32,8 @@
                         </div>
                         <hr>
                         OrderBy Filter
-                        <div ng-repeat="x in names | OrderBy : a">
-                            {{x}}
+                        <div ng-repeat="x in person | orderBy : 'firstName'">
+                            {{x.firstName + " " + x.lastName}}
                         </div>
                         <hr>
                         
