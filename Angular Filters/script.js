@@ -16,9 +16,13 @@ app.filter('lowerCase', function() {
   }
 });
 
+
+
 app.controller("myCtrl", function($scope){
     
     $scope.names = ['Ajinkya', 'Apurva', 'priyanka', 'sandip', 'gopal', 'neha']
+    
+    $scope.person = ['Ned', 'Rob', 'Jon', 'Arya', 'Sansa', 'Bran', 'Rickon']
   
     
 })

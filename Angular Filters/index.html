@@ -10,10 +10,33 @@
                         Data Input
                     </div>
                     <div class="panel-body">
-
+                        
+                        Lowercase Filter
+                        <div ng-repeat="x in names">
+                            {{x | lowercase}}
+                        </div>
+                        <hr>
+                        Uppercase Filter
+                        <div ng-repeat="x in names">
+                            {{x | uppercase}}
+                        </div>
+                        <hr>
+                        Custom Filter: Capitalize first Letter
                         <div ng-repeat="x in names">
                             {{x | capitalize}}
-                        </div>            
+                        </div>
+                        <hr>
+                        Input Keyword Filter <input ng-model="test">
+                        <div ng-repeat="x in names| filter : test">
+                            {{x}}
+                        </div>
+                        <hr>
+                        OrderBy Filter
+                        <div ng-repeat="x in names | OrderBy : a">
+                            {{x}}
+                        </div>
+                        <hr>
+                        
                     </div>
                 </div>
             </div>
