@@ -3,40 +3,55 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
-        <div class="container">
-            <div class="col-md-6">
+        <div class="">
+            <div class="col-md-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        Angular Directive
-                    </div>
+                        Carousel
+                    </div> 
                     <div class="panel-body">
+                        <div class="container">
+                            <div class="row">
+                                <carousel></carousel>
 
-                        <div ng-controller="mydirective">
-
-                            <my-directive></my-directive>                        
-
-                        </div>
-
-                        <div ng-controller="attributeController">
-
-                            <div your-Directive></div>                        
+                            </div>
 
                         </div>
-                        
-                          <div ng-controller="attributeController">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                Angular Directive
+                            </div>
+                            <div class="panel-body">
 
-                            <div your-Directive></div>                        
+                                <div ng-controller="mydirective">
 
+                                    <my-directive></my-directive>                        
+
+                                </div>
+
+                                <div ng-controller="attributeController">
+
+                                    <div your-Directive></div>                        
+
+                                </div>
+
+                                <div ng-controller="attributeController">
+
+                                    <div your-Directive></div>                        
+
+                                </div>
+
+                                <div ng-controller="commentController">
+
+                                    <!--                            directive: new-Directive                         -->
+                                </div>
+
+                            </div>
                         </div>
-
-                        <div ng-controller="commentController">
-
-<!--                            directive: new-Directive                         -->
-                        </div>
-
-
-
-
                     </div>
                 </div>
             </div>
